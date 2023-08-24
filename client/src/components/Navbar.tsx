@@ -47,7 +47,7 @@ const Navbar: React.FC<Props> = (props) => {
   }
 
   return (
-    <nav className="nav h-30 shadow" onMouseOver={handleSubmenu}>
+    <nav className="nav h-20 shadow" onMouseOver={handleSubmenu}>
       <div className="flex justify-around items-center p-4">
         <div className="flex items-center space-x-4">
           <img

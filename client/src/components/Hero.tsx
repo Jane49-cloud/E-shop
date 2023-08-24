@@ -27,7 +27,7 @@ function Hero() {
   }, [index]);
 
   return (
-    <section className="section2 h-screen">
+    <>
       <div className="section-centered">
         {adverts.map((item: any, itemIndex: any) => {
           const { id, image, text, color } = item;
@@ -48,21 +48,25 @@ function Hero() {
               <img
                 src={image}
                 alt={text}
-                className="item-img  rounded  "
+                className="item-img   "
                 style={{ backgroundColor: color }}
               />
-              <h4 className="title text-white animate-pulse">{text}</h4>
+              <div className="overlay-text">
+                <h2 className="title text-white animate-bounce text-2xl">
+                  {text}...
+                </h2>
+              </div>
             </article>
           );
         })}
-        <button className="prev" onClick={() => setIndex(index - 1)}>
+        {/* <button className="prev" onClick={() => setIndex(index - 1)}>
           <ChevronLeft />
         </button>
         <button className="next" onClick={() => setIndex(index + 1)}>
           <ChevronRight />
-        </button>
+        </button> */}
       </div>
-    </section>
+    </>
   );
 }
 

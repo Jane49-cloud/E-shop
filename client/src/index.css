@@ -53,3 +53,22 @@ body {
   font-size: 16px;
   color: #4a90e2;
 }
+
+/* product card styling */
+
+.parent {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  background: #e9e6e6;
+}
+
+.item {
+  height: 400px;
+  background: whitesmoke;
+}
+.item img {
+  height: 300px;
+  display: block;
+}
