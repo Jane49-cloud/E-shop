@@ -10,9 +10,11 @@ const ProductSection = (props: Props) => {
       {Data.map((data) => {
         return (
           <div className="item" key={data.id}>
-            <img src={data.image} alt="" />
-            <p>price: ksh 20</p>
-            <CustomButton>Add to cart</CustomButton>
+            <img src={data.image} alt="" className="product-img" />
+            <footer>
+              <p className="product-name">name</p>
+              <h4 className="product-price">$9.99</h4>
+            </footer>
           </div>
         );
       })}

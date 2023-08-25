@@ -5,6 +5,7 @@
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400; /* Regular */
+  overflow-x: hidden;
 }
 
 .custom-button {
@@ -57,18 +58,41 @@ body {
 /* product card styling */
 
 .parent {
-  padding: 20px;
+  width: 95vw;
+  margin: 0 auto;
+  max-width: 95vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 20px;
-  background: #e9e6e6;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 2rem;
+  height: auto !important;
+  margin-bottom: 20px;
 }
 
-.item {
-  height: 400px;
-  background: whitesmoke;
+.item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 .item img {
-  height: 300px;
   display: block;
+}
+.product-img {
+  height: 25rem;
+  object-fit: cover;
+}
+
+footer {
+  padding: 0.75rem 0;
+  text-align: center;
+}
+
+.product-name {
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+}
+.product-price {
+  margin-bottom: 0;
+  color: var(--clr-grey-3);
+  font-weight: 700;
 }
