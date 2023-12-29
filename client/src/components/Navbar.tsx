@@ -68,9 +68,9 @@ const Navbar: React.FC<Props> = (props) => {
           {SubLinks.map((item, index) => {
             const { links, page } = item;
             return (
-              <li key={index} className="relative group">
+              <li key={index} className="relative group ">
                 <button
-                  className="dp-btn"
+                  className="dp-btn  capitalize"
                   onMouseOver={(e) => displaySubmenu(e)}
                 >
                   {page}
@@ -87,7 +87,7 @@ const Navbar: React.FC<Props> = (props) => {
                     const { url, label } = link;
                     return (
                       <li key={index}>
-                        <a href={url} className="block px-2 py-1">
+                        <a href={url} className="block px-2 py-1 capitalize">
                           {label}
                         </a>
                       </li>

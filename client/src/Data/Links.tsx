@@ -24,6 +24,13 @@ const subLinks = [
       { label: "customers", url: "/" },
     ],
   },
+  {
+    page: "Outfits",
+    links: [
+      { label: "Office", url: "/" },
+      { label: "casual", url: "/" },
+    ],
+  },
 ];
 
 export default subLinks;
